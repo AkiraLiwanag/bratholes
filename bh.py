@@ -102,7 +102,7 @@ def search():
     zen = input("Search: ")
     print()
     print(file=z)
-    with open(r"DESTINY-logs.txt", 'r') as fp:
+    with open(r"BRATHOLES-logs.txt", 'r') as fp:
         for l_no, line in enumerate(fp):
             # search string
             if zen in line:
