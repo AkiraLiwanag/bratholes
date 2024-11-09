@@ -16,7 +16,7 @@ print("[This saves to BRATHOLES-logs.txt]")
 print()
 print(file=z)
 def version():
-    title =  usr + "" + " " + "" + ">>> Outbeat Produce: Bratholes-1.1 by A.A.P.L."
+    title =  usr + "" + " " + "" + ">>> Outbeat Produce: Bratholes-1.5 by A.A.P.L."
     ct = datetime.datetime.now()
     print(title, ct)
     print(title, ct, file=z)
@@ -39,7 +39,7 @@ diction = ["how are you", "i am fine", "youre welcome", "i dont know", "maybe", 
 
 
 def commands():
-    print(" version | [blank input] for nano | note / journal / save | search | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message [lh], brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start [wstart], teletubby, (ai) auto-mat [AAM], {[muslim prayer] fajr (before dawn) / dhuhr (noon) / asr (late afternoon) / maghrib (at sunset) / isha (nighttime)}, [ID / IDC], [echo], monitor-start [mstart], change username [username/user], [fuzz], message-scan [scan]")
+    print(" version | [blank input] for nano | note / journal / save | search | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, dhammapada, skate, art, give alms, radio, hack, message [lh], brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, karate, koans, equips, rpg, archery, color key, doodling, BUMP, MA, Magic, ascii, zen melody, monopoly, light incense, stats, prayer, progress, collections, football, c, map, print time, entry, posting, koran, heBrews, Medicals (M), Clearance, MiCasa, stuff, worship, Earth Science (SCI), value, psychology (psyc), Patient Simu, biology (B), legal terms (Law), the heart sutra, License, police (prad), climb, chemistry (ch), weapon start [wstart], teletubby, (ai) auto-mat [AAM], {[muslim prayer] fajr (before dawn) / dhuhr (noon) / asr (late afternoon) / maghrib (at sunset) / isha (nighttime)}, [ID / IDC], [echo], monitor-start [mstart], change username [username/user], [fuzz], message-scan [scan], monitor-search [msearch]")
 
 def print_time():
     t_time = datetime.datetime.now()
@@ -103,6 +103,19 @@ def search():
     print()
     print(file=z)
     with open(r"BRATHOLES-logs.txt", 'r') as fp:
+        for l_no, line in enumerate(fp):
+            # search string
+            if zen in line:
+                print(zen + "" + ' found')
+                print('Line Number:', l_no)
+                print('Line:', line)
+
+def msearch():
+    folder = input("folder (foldername followed by a slash): ")
+    zen = input("Monitor-Search: ")
+    print()
+    print(file=z)
+    with open(folder + "" + r"monitor-logs.txt", 'r') as fp:
         for l_no, line in enumerate(fp):
             # search string
             if zen in line:
@@ -1507,8 +1520,8 @@ def dhammapada():
     print()
     print()
     print(file=z)
-    print("Here are two verses from Buddha's text, The Dhammapada")
-    print("Here are two verses from Buddha's text, The Dhammapada", file=z)
+    print("Here are verses from Buddha's text, The Dhammapada")
+    print("Here are verses from Buddha's text, The Dhammapada", file=z)
     print()
     print(file=z)
     time.sleep(1)
@@ -2123,6 +2136,9 @@ def choice():
 
         if choice == 'search':
             search()
+
+        if choice == 'monitor-search' or choice == 'msearch':
+            msearch()
 
         if choice == 'echo':
             echo()
