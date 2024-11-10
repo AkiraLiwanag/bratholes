@@ -1585,7 +1585,7 @@ def message():
             random.shuffle(letters)
             return letters
         random_letters = generate_random_letters()
-        time.sleep(random.randint(0.11,4))
+        time.sleep(random.randint(0,4))
         print()
         print(file=z)
         nano = (diction)
