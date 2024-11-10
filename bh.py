@@ -16,7 +16,7 @@ print("[This saves to BRATHOLES-logs.txt]")
 print()
 print(file=z)
 def version():
-    title =  usr + "" + " " + "" + ">>> Outbeat Produce: Bratholes-1.5.3 by A.A.P.L."
+    title =  usr + "" + " " + "" + ">>> Outbeat Produce: Bratholes-1.5.4 by A.A.P.L."
     ct = datetime.datetime.now()
     print(title, ct)
     print(title, ct, file=z)
@@ -2124,8 +2124,6 @@ def tag():
     print(file=z)
     print(tag, rtag, random_letters, sitch, kchat, ctm)
     print(usr, tag, rtag, random_letters, sitch, kchat, ctm, file=z)
-    print()
-    print(file=z)
 
 def choice():
     choice = ''
