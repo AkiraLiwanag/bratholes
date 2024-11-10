@@ -16,7 +16,7 @@ print("[This saves to BRATHOLES-logs.txt]")
 print()
 print(file=z)
 def version():
-    title =  usr + "" + " " + "" + ">>> Outbeat Produce: Bratholes-1.5.4 by A.A.P.L."
+    title =  usr + "" + " " + "" + ">>> Outbeat Produce: Bratholes-1.6.1 by A.A.P.L."
     ct = datetime.datetime.now()
     print(title, ct)
     print(title, ct, file=z)
@@ -1585,7 +1585,7 @@ def message():
             random.shuffle(letters)
             return letters
         random_letters = generate_random_letters()
-        time.sleep(random.randint(1,4))
+        time.sleep(random.randint(0.11,4))
         print()
         print(file=z)
         nano = (diction)
@@ -2104,26 +2104,36 @@ def fuzz():
     print("You light an incense...", file=z)
     time.sleep(4)
 
-def tag():
+def tag():   
     rtag = input("tag: ")
-    nano = (diction)
-    ct = datetime.datetime.now()
-    tag = "tag:"
-    ctm = datetime.datetime.now()
-    def generate_random_letters():
-        random1 = random.choice(string.ascii_letters)
-        random2 = random.choice(string.ascii_letters)
-        random3 = random.choice(string.ascii_letters)
-        letters = [random1, random2, random3]
-        random.shuffle(letters)
-        return letters
-    random_letters = generate_random_letters()
-    sitch  = (round(random.random()*9999,4))
-    kchat = random.sample(nano, random.randint(0,7))
-    print()
-    print(file=z)
-    print(tag, rtag, random_letters, sitch, kchat, ctm)
-    print(usr, tag, rtag, random_letters, sitch, kchat, ctm, file=z)
+    while True:
+        try:
+            number = int(input("Number of results: "))
+        except ValueError:
+            print("Invalid value")
+        else:
+            break
+    number
+    for _ in range(number):
+        time.sleep(.103)
+        nano = (diction)
+        ct = datetime.datetime.now()
+        tag = "tag:"
+        ctm = datetime.datetime.now()
+        def generate_random_letters():
+            random1 = random.choice(string.ascii_letters)
+            random2 = random.choice(string.ascii_letters)
+            random3 = random.choice(string.ascii_letters)
+            letters = [random1, random2, random3]
+            random.shuffle(letters)
+            return letters
+        random_letters = generate_random_letters()
+        sitch  = (round(random.random()*9999,4))
+        kchat = random.sample(nano, random.randint(0,7))
+        print()
+        print(file=z)
+        print(tag, rtag, random_letters, sitch, kchat, ctm)
+        print(usr, tag, rtag, random_letters, sitch, kchat, ctm, file=z)
 
 def choice():
     choice = ''
