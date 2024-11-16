@@ -1930,9 +1930,9 @@ def weapon_start():
         letter10 = random.sample(letters5, 1)
         value = (round(random.random()*9999999999,10))
         value2 = (round(random.random()*9999999999,10))
-        hlevel = (round(random.random()*100,5))
-        mthreshold = (round(random.random()*100,5))
-        cpercentage = (round(random.random()*100,5))
+        hlevel = (round(random.random()*100,6))
+        mthreshold = (round(random.random()*100,6))
+        cpercentage = (round(random.random()*100,6))
         values = "value:"
         hlev = "H-level:"
         mthresh = "M-threshold:"
