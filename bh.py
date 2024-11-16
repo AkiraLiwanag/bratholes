@@ -16,7 +16,7 @@ print("[This saves to BRATHOLES-logs.txt]")
 print()
 print(file=z)
 def version():
-    title =  usr + "" + " " + "" + ">>> Outbeat Produce: Bratholes-1.6.1 by A.A.P.L."
+    title =  usr + "" + " " + "" + ">>> Outbeat Produce: Bratholes-2.0.1 by A.A.P.L."
     ct = datetime.datetime.now()
     print(title, ct)
     print(title, ct, file=z)
@@ -1930,24 +1930,36 @@ def weapon_start():
         letter10 = random.sample(letters5, 1)
         value = (round(random.random()*9999999999,10))
         value2 = (round(random.random()*9999999999,10))
+        hlevel = (round(random.random()*100,5))
+        cpercentage = (round(random.random()*100,5))
         values = "value:"
+        hlev = "H-level:"
+        cpercent = "C-percentage:"
+        print()
+        print(hlev, hlevel)
+        print(cpercent, cpercentage)
+        print()
+        time.sleep(5.5)
         print(values, letter1, letter2, letter3, letter4, letter5, value)
         print(values, letter6, letter7, letter8, letter9, letter10, value2)
         print()
-        time.sleep(.3)
+        time.sleep(.2)
         print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
         print()
+        time.sleep(.3)
         print("OM MANI PADME HUM")
         print()
-        time.sleep(0)
+        time.sleep(.3)
         print("You light an incense")
         print()
-        time.sleep(.3)
+        time.sleep(.5)
         result = random.sample(nano, 1)
         result2 = random.sample(nano, 1)
         print(result)
         print(result2)
+        time.sleep(.5)
         print()
+        print("--------------------------------------------")
 
     def call_random_function():
         while True:
