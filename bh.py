@@ -1947,7 +1947,7 @@ def weapon_start():
         print(values, letter6, letter7, letter8, letter9, letter10, value2)
         print()
         time.sleep(.2)
-        print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+        print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
         print()
         time.sleep(.3)
         print("OM MANI PADME HUM")
