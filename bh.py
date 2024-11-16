@@ -1931,12 +1931,15 @@ def weapon_start():
         value = (round(random.random()*9999999999,10))
         value2 = (round(random.random()*9999999999,10))
         hlevel = (round(random.random()*100,5))
+        mthreshold = (round(random.random()*100,5))
         cpercentage = (round(random.random()*100,5))
         values = "value:"
         hlev = "H-level:"
+        mthresh = "M-threshold:"
         cpercent = "C-percentage:"
         print()
         print(hlev, hlevel)
+        print(mthresh, mthreshold)
         print(cpercent, cpercentage)
         print()
         time.sleep(5.5)
