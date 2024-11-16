@@ -16,7 +16,7 @@ print("[This saves to BRATHOLES-logs.txt]")
 print()
 print(file=z)
 def version():
-    title =  usr + "" + " " + "" + ">>> Outbeat Produce: Bratholes-2.0.1 by A.A.P.L."
+    title =  usr + "" + " " + "" + ">>> Outbeat Produce: Bratholes-2.0.2 by A.A.P.L."
     ct = datetime.datetime.now()
     print(title, ct)
     print(title, ct, file=z)
@@ -1958,8 +1958,10 @@ def weapon_start():
         time.sleep(.5)
         result = random.sample(nano, 1)
         result2 = random.sample(nano, 1)
+        result3 = random.sample(nano, 1)
         print(result)
         print(result2)
+        print(result3)
         time.sleep(.5)
         print()
         print("--------------------------------------------")
