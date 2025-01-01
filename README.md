@@ -1,3 +1,5 @@
+THIS PROJECT HAS SINCED MOVED TO: http://github.com/nanodesks/Destiny
+
 # bratholes
 
 A Life game, created by Akira P. Liwanag Outbeat Production
